@@ -129,6 +129,7 @@ comments:
   gitalk:
     clientID    : 383b3175faa112ff07f7 # GitHub Application Client ID
     clientSecret: f5a10ed09811c0d6c889cf1d3c8a1ac5d227cb78 # GitHub Application Client Secret
+    accessToken : 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
     repository  : Gitalk # GitHub repo
     owner       : zhongliangxie # GitHub repo owner
     admin: zhongliangxie # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
