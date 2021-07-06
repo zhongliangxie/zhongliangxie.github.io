@@ -31,11 +31,6 @@ DefaultContentLanguage = "zh"
     tabWidth = 4
 
 [[menu.main]]
-url = "/photon"
-name = "Photon"
-weight = 4
-
-[[menu.main]]
 url = "/index.xml"
 name = "RSS Feed"
 weight = 4
