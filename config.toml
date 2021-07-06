@@ -1,0 +1,56 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme="diary"
+
+DefaultContentLanguage = "zh"
+[params]
+  enableReadingTime=true
+  favicon = "Your Favicon Address"
+
+  enableValine = true
+  [params.valine]
+    appId = "y7DElWkCaAMOqApTrKS5Wux5-MdYXbMMI"
+    appKey = "JYo8eadQLVWVUuU6wcXENwF6"
+    avator = "avator type"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[[menu.main]]
+url = "/photon"
+name = "Photon"
+weight = 4
+
+[[menu.main]]
+url = "/index.xml"
+name = "RSS Feed"
+weight = 4
+
+[[menu.main]]
+url = "/categories"
+name = "分类"
+weight = 3
+
+[[menu.main]]
+url = "/tags"
+name = "标签"
+weight = 2
+
+[[menu.main]]
+url = "/post"
+name = "存档"
+weight = 1

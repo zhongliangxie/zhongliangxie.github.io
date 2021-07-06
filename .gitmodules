@@ -1,0 +1,12 @@
+[submodule "themes/diary"]
+	path = themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary.git
+[submodule "quickstart/themes/ananke"]
+	path = quickstart/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "quickstart/themes/diary"]
+	path = quickstart/themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary.git
+[submodule "themes/alageek"]
+	path = themes/alageek
+	url = https://github.com/gkmngrgn/hugo-alageek-theme.git
