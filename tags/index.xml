@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My New Hugo Site</title>
-    <link>http://example.org/tags/</link>
+    <link>https://zhongliangxie.github.io/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jul 2021 17:19:22 +0800</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 17:19:22 +0800</lastBuildDate><atom:link href="https://zhongliangxie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Primer</title>
-      <link>http://example.org/tags/primer/</link>
+      <link>https://zhongliangxie.github.io/tags/primer/</link>
       <pubDate>Tue, 06 Jul 2021 17:19:22 +0800</pubDate>
       
-      <guid>http://example.org/tags/primer/</guid>
+      <guid>https://zhongliangxie.github.io/tags/primer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>todo</title>
-      <link>http://example.org/tags/todo/</link>
+      <link>https://zhongliangxie.github.io/tags/todo/</link>
       <pubDate>Tue, 06 Jul 2021 17:19:22 +0800</pubDate>
       
-      <guid>http://example.org/tags/todo/</guid>
+      <guid>https://zhongliangxie.github.io/tags/todo/</guid>
       <description></description>
     </item>
     
