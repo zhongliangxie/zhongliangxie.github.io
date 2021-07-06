@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My New Hugo Site</title>
+    <title>Categories on 右手的世界</title>
     <link>https://zhongliangxie.github.io/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
+    <description>Recent content in Categories on 右手的世界</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>XZL. 本站遵循 CC-BY-NC 4.0 协议</copyright>
     <lastBuildDate>Tue, 06 Jul 2021 17:19:22 +0800</lastBuildDate><atom:link href="https://zhongliangxie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Todo</title>
