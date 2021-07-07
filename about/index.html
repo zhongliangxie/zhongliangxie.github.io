@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Abouts</title>
+<title>About Me</title>
 
 
 
@@ -41,6 +41,10 @@ if (!doNotTrack) {
 <script src="/vendor/js/vue.min.js" ></script>
 
 
+<link rel="stylesheet" href="/css/main.css">
+
+
+
   
 
 
@@ -65,11 +69,17 @@ if (!doNotTrack) {
 
 
 
+  
+    <script src="/js/toc.js"></script>
+  
 
 
 
 
 
+
+
+<script src='https://unpkg.com/valine@1.4.14/dist/Valine.min.js'></script>
 
 
 
@@ -164,13 +174,51 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 
 &copy;
 	
-	XZL. 本站遵循 CC-BY-NC 4.0 协议
+	 XZL. 本站遵循 CC-BY-NC 4.0 协议
+	<br><br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
 	
 
     </div>
     
 </div><div ref="extraContainer" class="extra-container">
     
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#contact" onclick="onNavClick(`#contact-nav`)" id="contact-nav">
+									Contact
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
     
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
@@ -187,8 +235,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 brightness_7
             </i>
         </a>
-        
-        
         
         
     </div>
@@ -253,6 +299,42 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
             
             
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#contact" onclick="onNavClick(`#contact-nav`)" id="contact-nav">
+									Contact
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
         </div>
     </div>
 </div>
@@ -296,59 +378,74 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
             <div id="content">
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        
-            <a class="a-block">
-                <div class="post-item-wrapper post-item-wrapper-no-hover">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title post-item-title-small year">
-                                2021
-                            </div>
-                        </div>
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    About Me
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2021-07-06 19:21
+                        </time>
+                        
+
+                        
+
+                        
+                        
                     </div>
                 </div>
-            </a>
+            </div>
             
-            <a href="/about/about-me/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                About Me
-                            </div>
-                            <div class="post-item-meta">
-    2021-07-06
-    &emsp;
-    
-    
-    <i class="material-icons" style="font-size:10px">schedule</i>
-    
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>Hi, I am  <em><strong><code>Xie Zhong Liang</code></strong></em>, a game programmer at the moment living in Guangzhou - China. I mainly work with <code>Unity3D</code> and <code>C#</code>.</p>
+<h1 id="contact"><code>Contact</code></h1>
+<p>Find me on <a href="https://github.com/zhongliangxie">Github</a> / Twitter / LinkedIn</p>
 
-    
-    
-
-    
-    0 s
-    
-    
-    &emsp;
-    
-</div>
-
-                        </div>
-                    </div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2021-07-06</p>
+                    
                 </div>
-            </a>
+            </div>
             
-        
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://zhongliangxie.github.io/posts/automaticlly-copy-to-apk-assets-unity/">
+			下回<br>自动让Unity复制文件到Android APK的&#39;assets&#39;目录
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://zhongliangxie.github.io/posts/my-first-post/">
+			上回<br>中文
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+                <p style="opacity: 0.6" align="center">
+                    <small>此篇文章的评论功能已经停用。</small>
+                </p>
+                
+            </div>
+        </div>
     </div>
 </div>
 
-
-            </div>
-
-
-<div id="single-column-footer">
+            </div><div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
@@ -356,7 +453,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 
 &copy;
 	
-	XZL. 本站遵循 CC-BY-NC 4.0 协议
+	 XZL. 本站遵循 CC-BY-NC 4.0 协议
+	<br><br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
 	
 </div>
             </div>
@@ -605,6 +704,16 @@ app = new Vue({
         this.mounted = true;
 
         
+            new Valine({
+                el: '#vcomments',
+                appId: "y7DElWkCaAMOqApTrKS5Wux5-MdYXbMMI",
+                appKey: "JYo8eadQLVWVUuU6wcXENwF6",
+                requiredFields: ['nick','mail'],
+                enableQQ: true,
+                recordIP: true,
+                avatar: "avator type",
+            })
+        
         
         
 
@@ -615,6 +724,9 @@ app = new Vue({
             elem.classList.add("table-hover");
         })
 
+        
+        spy();
+        window.addEventListener('scroll', this.debounce(spy, 250, { 'maxWait': 250 }), false);
         
         
     },

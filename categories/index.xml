@@ -6,8 +6,17 @@
     <description>Recent content in Categories on 右手的世界</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>XZL. 本站遵循 CC-BY-NC 4.0 协议</copyright>
-    <lastBuildDate>Tue, 06 Jul 2021 17:19:22 +0800</lastBuildDate><atom:link href="https://zhongliangxie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright> XZL. 本站遵循 CC-BY-NC 4.0 协议</copyright>
+    <lastBuildDate>Wed, 07 Jul 2021 17:31:51 +0800</lastBuildDate><atom:link href="https://zhongliangxie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>游戏开发</title>
+      <link>https://zhongliangxie.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Wed, 07 Jul 2021 17:31:51 +0800</pubDate>
+      
+      <guid>https://zhongliangxie.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Todo</title>
       <link>https://zhongliangxie.github.io/categories/todo/</link>

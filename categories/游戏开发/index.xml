@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏开发 on 右手的世界</title>
+    <link>https://zhongliangxie.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 游戏开发 on 右手的世界</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> XZL. 本站遵循 CC-BY-NC 4.0 协议</copyright>
+    <lastBuildDate>Wed, 07 Jul 2021 17:31:51 +0800</lastBuildDate><atom:link href="https://zhongliangxie.github.io/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自动让Unity复制文件到Android APK的&#39;assets&#39;目录</title>
+      <link>https://zhongliangxie.github.io/posts/automaticlly-copy-to-apk-assets-unity/</link>
+      <pubDate>Wed, 07 Jul 2021 17:31:51 +0800</pubDate>
+      
+      <guid>https://zhongliangxie.github.io/posts/automaticlly-copy-to-apk-assets-unity/</guid>
+      <description>解决方案 我最近不得不将一个 SDK 集成到一个使用 Unity 3D 制作的 Android 应用程序中。我不得不将一些配置文件直接放入 APK 内的“资产”目录中。很自然地，Unity 将我的游戏打包成所需的 APK 格式。但是如果我想改变内容呢？我必须使用APK Tool解压缩它并添加我的文件。然后重新打包。
+一定会有更好的办法。我认为很多游戏开发者都必须做这种事情，而 Unity 会提供一种简单的方法。不幸的是，文档只提到了 Plugins 目录。这对于包含本机库和二进制文件非常有用。但是 Plugins 目录内置了更多的秘密功能。您可以直接在 Plugins 目录中创建一个“assets”目录。Unity 会将内容复制到 APK。很好用，但没有文档。
+&#39;Assets/StreamingAssets&#39;目录也可用于让 Unity 将文件复制到 Android &amp;lsquo;assets&amp;rsquo; 目录。我看到的唯一区别是“Assets/StreamingAssets”中的文件会在每个平台上复制，而 &#39;Assets/Plugins/Android/assets&#39; 中的文件仅在构建 Android 时复制。这两种方法都是可行的选择，具体取决于您想要实现的目标。
+这只是一个小技巧。但我想分享它。当然，您可以导出一个Android Studio项目并在其中添加资产。</description>
+    </item>
+    
+  </channel>
+</rss>

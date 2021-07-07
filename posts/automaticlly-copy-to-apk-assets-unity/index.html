@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.83.1" />
-<title>右手的世界</title>
+<title>自动让Unity复制文件到Android APK的&#39;assets&#39;目录</title>
 
 
-
-  
 
 
 <meta charset="utf-8">
@@ -13,7 +10,7 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="">
+<meta name="description" content="在“Assets/Plugins/Android”中创建一个&#39;assets&#39;目录，让Unity自动将所有包含的文件复制到APK的&#39;assets&#39;目录中。">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
@@ -72,11 +69,17 @@ if (!doNotTrack) {
 
 
 
+  
+    <script src="/js/toc.js"></script>
+  
 
 
 
 
 
+
+
+<script src='https://unpkg.com/valine@1.4.14/dist/Valine.min.js'></script>
 
 
 
@@ -91,7 +94,7 @@ if (!doNotTrack) {
 <body>
     	<div id="app"><div ref="sideContainer" class="side-container">
     
-    <a class="a-block nav-head active" href="https://zhongliangxie.github.io/">
+    <a class="a-block nav-head false" href="https://zhongliangxie.github.io/">
     
         <div class="nav-title">
             右手的世界
@@ -109,9 +112,11 @@ if (!doNotTrack) {
             
             
             
+                
             
             
-            <a class="a-block nav-link-item false" href="/posts">
+            
+            <a class="a-block nav-link-item active" href="/posts">
                 存档
             </a>
             
@@ -179,6 +184,42 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 </div><div ref="extraContainer" class="extra-container">
     
     
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" onclick="onNavClick(`#解决方案-nav`)" id="解决方案-nav">
+									解决方案
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
@@ -196,24 +237,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
         </a>
         
         
-        
-            <div class="pagination-indicator">
-                <span style="text-align: center">
-                    2<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>2
-                </span>
-            </div>
-            
-            
-            <a class="pagination-action" href="/">
-                <i class="material-icons pagination-action-icon">
-                    chevron_left
-                </i>
-            </a>
-            
-
-            
-        
-        
     </div>
 </div>
 <div class="single-column-drawer-container" ref="drawer"
@@ -226,9 +249,11 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 
                 
+                    
                 
                 
-                <a class="a-block drawer-menu-item false" href="/posts">
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
                     存档
                 </a>
                 
@@ -274,6 +299,42 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
             
             
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" onclick="onNavClick(`#解决方案-nav`)" id="解决方案-nav">
+									解决方案
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
         </div>
     </div>
 </div>
@@ -315,100 +376,101 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 </div>
 
             <div id="content">
-
 <div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-no-background">
-        
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
             
-            <a href="https://zhongliangxie.github.io/posts/my-first-post3/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-divider">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                My First Post3
-                            </div>
-                            <div class="post-item-summary">
-                                
-                            </div>
-                            <div class="post-item-meta">
-    2021-07-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-    <span class="draft-label">草稿</span>
-    
-</div>
+            
+            
 
-                        </div>
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    自动让Unity复制文件到Android APK的&#39;assets&#39;目录
+                    
+                    <div class="post-subtitle">
+                        在“Assets/Plugins/Android”中创建一个&#39;assets&#39;目录，让Unity自动将所有包含的文件复制到APK的&#39;assets&#39;目录中。
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2021-07-07 17:31
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91">游戏开发</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/unity">Unity</a>
+                                &nbsp;
+                            
                         
                         
                     </div>
                 </div>
+            </div>
             
-        
-            
-            <a href="https://zhongliangxie.github.io/posts/my-first-post2/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-divider">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                My First Post2
-                            </div>
-                            <div class="post-item-summary">
-                                
-                            </div>
-                            <div class="post-item-meta">
-    2021-07-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-    <span class="draft-label">草稿</span>
-    
-</div>
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h1 id="解决方案">解决方案</h1>
+<p>我最近不得不将一个 SDK 集成到一个使用 Unity 3D 制作的 Android 应用程序中。我不得不将一些配置文件直接放入 APK 内的“资产”目录中。很自然地，Unity 将我的游戏打包成所需的 APK 格式。但是如果我想改变内容呢？我必须使用<a href="http://ibotpeaches.github.io/Apktool/">APK Tool</a>解压缩它并添加我的文件。然后重新打包。</p>
+<p>一定会有更好的办法。我认为很多游戏开发者都必须做这种事情，而 Unity 会提供一种简单的方法。不幸的是，<a href="http://docs.unity3d.com/Manual/android-GettingStarted.html">文档</a>只提到了 <code>Plugins</code> 目录。这对于包含本机库和二进制文件非常有用。但是 <code>Plugins</code> 目录内置了更多的秘密功能。您可以直接在 Plugins 目录中创建一个“assets”目录。Unity 会将内容复制到 APK。很好用，但没有文档。</p>
+<p><code>'Assets/StreamingAssets'</code>目录也可用于让 Unity 将文件复制到 Android &lsquo;assets&rsquo; 目录。我看到的唯一区别是“Assets/StreamingAssets”中的文件会在每个平台上复制，而 <code>'Assets/Plugins/Android/assets'</code> 中的文件仅在构建 Android 时复制。这两种方法都是可行的选择，具体取决于您想要实现的目标。</p>
+<p>这只是一个小技巧。但我想分享它。当然，您可以导出一个<a href="http://developer.android.com/sdk/index.html">Android Studio</a>项目并在其中添加资产。</p>
 
-                        </div>
-                        
-                        
-                    </div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2021-07-07</p>
+                    
                 </div>
+            </div>
             
-        
-        </a>
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+			下回<br>已经到头啦。
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://zhongliangxie.github.io/about/">
+			上回<br>About Me
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+<div id="vcomments"></div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
     </div>
 </div>
 
-            </div>
-
-<div class="pagination">
-    
-    <a class="pagination-action" href="/" style="opacity:1">
-    
-        <i class="material-icons pagination-action-icon">
-            chevron_left
-        </i>
-    </a>
-
-        <div class="pagination-indicator">
-            <span>2/2</span>
-        </div>
-
-        
-            <a class="pagination-action" style="opacity:0">
-        
-                <i class="material-icons pagination-action-icon">
-                    chevron_right
-                </i>
-            </a>
-</div>
-
-
-<div id="single-column-footer">
+            </div><div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
@@ -667,6 +729,16 @@ app = new Vue({
         this.mounted = true;
 
         
+            new Valine({
+                el: '#vcomments',
+                appId: "y7DElWkCaAMOqApTrKS5Wux5-MdYXbMMI",
+                appKey: "JYo8eadQLVWVUuU6wcXENwF6",
+                requiredFields: ['nick','mail'],
+                enableQQ: true,
+                recordIP: true,
+                avatar: "avator type",
+            })
+        
         
         
 
@@ -677,6 +749,9 @@ app = new Vue({
             elem.classList.add("table-hover");
         })
 
+        
+        spy();
+        window.addEventListener('scroll', this.debounce(spy, 250, { 'maxWait': 250 }), false);
         
         
     },

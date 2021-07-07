@@ -1,0 +1,28 @@
+.footer a {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer a:first-child {
+    margin-left: 0;
+}
+
+.footer a:last-child {
+    margin-right: 0;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+.footer a.icon {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+}
+
+.my-4 {
+    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+}
